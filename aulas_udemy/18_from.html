@@ -1,0 +1,127 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Oliveira">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+
+
+</head>
+
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="#" method="POST" class="formLogin">
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <label>E-mail</label>
+            <input type="email" required>
+            <br>
+            <label>Numero de Filhos</label>
+            <input type="number" min="0" max="5">
+            <br>
+            <label>Nascimento</label>
+            <input type="date" min="2018-01-30" max="2020-02-19" required>
+            <p>Sexo:</p>
+            <label>
+                <input type="radio" name="sexo" valeu="M"  required>
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" VALE="F"  required> 
+                Feminino
+            </label>
+            <br>
+            <label> Estado</label>
+            <select>
+                <option value="0">Selecione</option>
+                <option value="Sp">Sao Paulo</option>
+                <option vale="RJ">Rio De Janeiro</option>
+                <option valeu="MG">Minas Gerais</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend> Area De Interesse</legend>
+            <label>
+                <input type="checkbox" name="HTML" valeu="HTML">HTML
+            </label>
+            <label>
+                <input type="checkbox" name="CSS" valeu="CSS">CSS
+            </label>
+            <label>
+                <input type="checkbox" name="JS" valeu="JS">JAVASCRIPT
+            </label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Menssagem</legend>
+            <textarea style="resize:none" name="msg" cols="30" rows="10" maxlength="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Menssagem</legend>
+            <textarea style="resize: none" name="contrato" cols="30" rows="10" readonly> Aqui Entra O Texto Do Contrato que precisa ser aceito</textarea>
+
+
+            <label><input type="checkbox"required> Li E Aceito </label>
+
+            <input type="range" min="0" max="10" step="3">
+            <input type="time">
+            <input type="color">
+        </fieldset>
+
+        <fieldset>
+
+            <select>/* Seleciona Apenas Uma Opção */
+                <option> opção1 </option>
+                <option> opção2 </option>
+                <option> opção3 </option>
+                <option> opção4 </option>
+                <option> opção5 </option>
+            </select>
+
+            <select multiple> /* Segurando a tecla ctrl seleciona mais de uma opção */
+            <option> opção1 </option>
+            <option> opção2 </option>
+            <option> opção3 </option>
+            <option> opção4 </option>
+            <option> opção5 </option>
+            </select>
+
+            <select size="3">/* Aparece apenas 3 Opção */
+                <option> opção1 </option>
+                <option> opção2 </option>
+                <option> opção3 </option>
+                <option> opção4 </option>
+                <option> opção5 </option>
+                </select>
+
+            <select size="3" multiple>/* Aparece apenas 3 Opção e pode selecionar varios opção */
+                    <option> opção1 </option>
+                    <option> opção2 </option>
+                    <option> opção3 </option>
+                    <option> opção4 </option>
+                    <option> opção5 </option>
+                    </select>
+
+
+        </fieldset>
+
+
+
+        <br>
+        <input type="submit" value="mandar">
+        <input type="button" value="enviar">
+        <input type="reset" value="resetar">
+
+    </form>
+</body>
+
+</html>

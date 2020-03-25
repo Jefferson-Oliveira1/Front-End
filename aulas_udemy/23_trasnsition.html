@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Oliveira dos santos">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+</head>
+
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background: orangered;
+        transition-property:width, heigth;
+        transition-duration:  .5s, 5s;
+        transition-timing-function: cubic-bezier(.67,-0.38,.5,1.4);
+        transition-delay: .5;
+    }
+    div:hover{
+        width:400px;
+        height: 400px;
+
+    }
+
+    .div2{
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+        background: rgb(38, 0, 255);
+        transition-property:all;
+        transition-duration:  .5s, .2s;
+        transition-timing-function: cubic-bezier(.67,-0.38,.5,1.4);
+        transition-delay: .3;
+
+    }
+
+    .div2:hover{
+        
+        width:400px;
+        height: 400px;
+
+    }
+
+    .div3{
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+        background: rgb(82, 243, 18);
+        transition-property:width, height;
+        transition-duration:.1s, .3s;
+        transition-timing-function: cubic-bezier(.67,-0.38,.5,1.4);
+        transition-delay: 0s, 8s;
+
+    }
+
+    .div3:hover{   
+        width:400px;
+        height:400px;
+    }
+</style>
+
+<body>
+    <h1>transition</h1>
+
+    <div> 1 </div>
+    <div class="div2"> 2 </div>
+    <div class="div3"> 3 </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Oliveira dos santos">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+</head>
+
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-image: linear-gradient(to right, rgb(0, 255, 234), transparent), linear-gradient(rgb(233, 85, 201), transparent), url(utilidade/ceu.jpg);
+        background-size: auto;
+        /*tambem pode sert trabalhadas com imagemns */
+    }
+    
+    h1 {
+        font-family: serif;
+        color: rgb(252, 11, 103);
+        font-size: 45px;
+        text-align: center;
+        text-shadow: 3px 3px 2px rgb(248, 244, 30);
+    }
+    
+    #radius1 {
+        background: rgb(247, 6, 6);
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        border-radius: 50px 100px / 100px 50px;
+        /* serve para aredondar as pordas no sentido Horario */
+        box-shadow: 10px 0px 0px 0px black, 0px 10px 0px 0px rgb(145, 6, 180), 0px 0px 0px 10px rgb(12, 16, 238);
+    }
+</style>
+
+<body>
+    <h1>CSS eFeitos</h1>
+    <div id="radius1"></div>
+</body>
+
+</html>

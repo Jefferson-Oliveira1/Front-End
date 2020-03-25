@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Jefferson oliveira">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+        
+            li ul{
+                height: 0;
+                overflow: hidden;
+                transition: height .55s;
+            }
+            li:hover{
+                background: red;
+                
+            }
+            li:hover ul{
+                display: block;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <ul>
+            <li> item 1</li>
+            <li> item 2
+                <ul>
+                    <li> item 2.1 </li>
+                    <li> item 2.2 </li>
+                </ul>
+            </li>
+            <li> item 3
+                <ul>
+                    <LI> ITEM 3.1 </LI>
+                </ul>
+
+            </li>
+        </ul>
+        
+        <hr>
+        <dl>
+            <dt>html</dt>
+            <dd>clinguagem de marcação de hyper texto</dd>
+            
+            <dt> css </dt>
+            <dd> linguagem de ciação de folhas de stilos</dd>
+    
+        </dl>
+        
+        <hr>
+        
+        <dl>
+            <dt> www</dt>
+            <dt> internet</dt>
+            <dd> rede mundial de computadores</dd>
+            
+            <dt>javascript</dt>
+            <dd> linguagem escript para internet </dd>
+            <dd>script para rodar no browser</dd>
+        </dl>
+    </body>
+</html>
