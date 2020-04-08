@@ -8,6 +8,14 @@
         <meta name="author" content="Jefferson Oliveira dos santos">
         <meta name="description" content="descrição bacanuda">
         <meta name="keywords" content="html5, tecnologia">
+        <link href="/ProjetoStrata/css/estilo.css">
+       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+
     </head>
 
     <body>
@@ -15,7 +23,7 @@
         <header class="main-header">
 
             <a href="base.html" class="main-header-link">
-                <img src="#" Alt="texto qualquer">
+                <img src="/ProjetoStrata/imagens/avatar.jpg" Alt="texto qualquer">
             </a>
             <h1>Trabalhos e groselhas de<br>
                 <strong>Jefferson Oliveira</strong>,<br>
@@ -84,10 +92,342 @@
                         <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
                 </article>
 
-                <a href="#" title="Veja Mais" class="Button-default">Veja Portifolio completo</a>
+                <a href="#" title="Veja Portifolio completo" class="button-default">Veja Portifolio completo</a>
             </section>
 
+            <section class="main-content-section">
+                <h3>Get In Touch </h3>
+                <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna.
+                    Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 
+                    <form action="#" method="Post">
+
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                        
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="Email">
+
+                        <label for="mensagem">Digite Sua Menssagem </label>
+                        <textarea  name="menssagem" id="mensagem"></textarea>
+
+                        <input type="submit" value="enviar">
+
+                    </form>
+
+                    <address>
+
+                        <p>
+                            <span>Endereço</span>
+                            234 Somewhere Rd. Nashville, TN 00000 United States
+                         </p>
+                            
+                         <p>
+                            <span>Telefone</span>
+                             000-000-0000
+                        </p>
+
+                        <p>
+                            <span>Email</span>
+                            hello@untitled.tld 
+                        </p>
+
+                    </address>
+
+            </section>
+
+            <section class="main-content-section">
+                <h3>Elements</h3>
+
+                <h4>Text</h4>
+                <p>
+                    Lorem ipsum <b>dolor sit</b> bamet consectetur adipisicing elit.
+                    Blanditiis voluptatem ea <strong> vel obcaecati!</strong> A,
+                    doloribus delectus,<i>debitis, aut distinctio </i>vel exercitationem
+                    <em> dicta officia</em> maiores fugit quod illum voluptate?
+                </p>
+
+                <blockquote cite="http://developer.mozilla.org">
+                    <p>Esta é uma citação tirada da
+                    Mozilla Developer Center.</p>
+                  </blockquote>
+
+                  <p>According to Mozilla's website,
+                    <q
+                    cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
+                    was released in 2004 and became a big success.</q>
+                </p>
+
+                <h4>proformatado</h4>
+                <pre>  ele respeirta os espaços e quebras de Linhas
+                    
+                    <code>
+&lt;script&gt;
+  alert("oi")
+&lt;/script&gt;
+                    </code>
+                    
+                </pre>
+
+                <h4> Listas </h4>
+
+                <h5>  Ordenada</h5>
+                
+                <ol> 
+                    <li> item 1 </li>
+                    <li> item 2 </li>
+                    <li> item 3 </li>
+                </ol>
+
+                <h5> Nao Ordenada </h5>
+                
+                <ul> 
+                    <li> item 1 </li>
+                    <li> item 2 </li>
+                    <li> item 3 </li>
+                </ul>
+
+                <h5> alternete</h5>
+                
+                <ul class="ul-alternate"> 
+                    <li> item 1 </li>
+                    <li> item 2 </li>
+                    <li> item 3 </li>
+                </ul>
+
+                <h5>Actions</h5>
+
+                <ul>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                </ul>
+                
+
+                <p>
+                    <a href="#" class="button-default">Default </a>
+                    <a href="#" class="button-default button-default-strokes">Default</a>
+                </p>
+
+                <p>
+                    <a href="#" class="button-default button-small">Defaul small </a>
+                    <a href="#" class="button-default button-default-small button-default-strokes">Default</a>
+                </p>
+
+                <p>
+                    <a href="#" class="button-default button-default-full">Defaul full </a>
+                    <a href="#" class="button-default button-default-full button-default-strokes">Default</a>
+                </p>
+
+                <p>
+                    <a href="#" class="button-default button-default-full button-default-small">Defaul small </a>
+                    <a href="#" class="button-default button-default-full button-default-small button-default-strokes">Default</a>
+                </p>
+
+                <h4> Table </h4>
+                <h5>Default</h5>
+
+                <table clas="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Prince</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+
+                        <tr>
+                            <td>Item One</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Two</td>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Three</td>
+                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Five</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                     </tbody>
+                  
+                </table>
+
+                <h5>Default</h5>
+
+                <table clas="table-alternate">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Prince</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+
+                        <tr>
+                            <td>Item One</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Two</td>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Three</td>
+                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Item Five</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                     </tbody>
+                  
+                </table>
+
+                <h5> Buttons</h5>
+
+                <h5>Actions</h5>
+
+                <p>
+                    <button class="button-default"> Default </button>
+                    <button class="button-default button-default-strokes">Default</button>
+                </p>
+
+                <p>
+                    <button class="button-default button-default-small button-default-strokes">Default</button>
+                </p>
+
+                <p>
+                    <button class="button-default button-default-full">Defaul full </button>
+                    <button class="button-default button-default-full button-default-strokes">Default</button>
+                </p>
+
+                <p>
+                    <button class="button-default button-default-full button-default-small">Defaul small </button>
+                    <button class="button-default button-default-full button-default-small button-default-strokes">Default</button>
+                </p>
+
+                <h5> Form </h5>
+
+                <form>
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="text" email="email" id="email">
+
+                    <select>
+                        <option value="0">JAVASCRIPTY ...</option>
+                        <option value="1">PORTUGOIL ...</option>
+                        <option value="2">JAVA ...</option>
+                        <option value="3">CSS ...</option>
+                        
+                    </select>
+                </form>
+
+                    <label><input type="radio" value="Baixa" name="prioridade">Baixa Prioridade </label>
+                    <label><input type="radio" value="media" name="prioridade">Baixa Media </label>
+                    <label><input type="radio" value="alta" name="prioridade">Baixa alta </label>
+
+                    <label><input type="checkbox" value="1" name="copy">Envie-me Uma Copia</label>
+                    <label><input type="checkbox" value=".1" name="copy">Sou Humano</label>
+                    <label for="msg">menssagem</label>
+                    <textarea placeholder="Dgite Uma Menssagem"></textarea>
+
+                    <input type="submit" class="button-default" value="Enviar">
+                    <input type="reset" class="button-defaulti-stroke" value="limpar">
+
+            </section>
+
+            <section class="main-content-section">
+                <h3>imagens</h3>
+
+                <div class="gallery-img">
+                    <img src="/ProjetoStrata/imagens/fulls/01.jpg" alt="">
+                </div>
+
+                <div class="gallery-thumb">
+
+                    <img src="/ProjetoStrata/imagens/thumbs/01.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/02.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/03.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/04.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/05.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/06.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/07.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/08.jpg" alt="">
+                    <img src="/ProjetoStrata/imagens/thumbs/09.jpg" alt="">
+                </div>
+
+                <h4>Left &amp; Rigth</h4>
+
+                <p>
+                   <img src="/ProjetoStrata/imagens/avatar.jpg" alt="" class="img-left" >" O que é Lorem Ipsum?
+                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
+                    e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja 
+                    de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não 
+                    só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente
+                    inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens
+                    de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica
+                    como Aldus PageMaker.
+                </p>
+                
+                <p>
+                    <img src="/ProjetoStrata/imagens/avatar.jpg" alt="" class="img-ritght" >Porque nós o usamos?
+                    É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma
+                    página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem 
+                    uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui",
+                    fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de
+                    publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão,
+                    e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. 
+                    Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito 
+                    (injetando humor, e coisas do gênero).
+               
+                </p>
+
+            </section>
 
         </main>
         <footer class="main-footer"></footer>
