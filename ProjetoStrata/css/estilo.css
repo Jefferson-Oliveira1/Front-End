@@ -1,0 +1,74 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    m
+    
+}
+.main-header{ /* parte lateral esquerda */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 36%;
+    background-image: url(/imagens/bg.jpg);
+    padding-top: 150px;
+    border-right: 1px solid #666;
+
+}
+
+.main-header img{ /* que fica ao lado esquerdo */
+    border-radius: 70px; /* aredonda a imagem  */
+    float: right; /* coloca a imagem na direita */
+    margin-right: 35px;
+    
+
+}
+.main-content{/* referente a parte direita */
+    width: 60%;
+    margin-left: 35%; 
+    padding: 145px 5px;
+    
+ 
+ }
+ 
+
+h1{/* Referente ao texto na esquerda*/
+    font-size: 28px;
+    color:#666;
+    text-align: right;  /* coloca na direita */
+    margin: 35px;
+    padding-top: 130px;
+    
+}
+h2{
+    font-size: 30px;
+    color: rgba(102, 102, 102, 0.774);
+}
+p{ /* Referente a todos os subtitulos */
+    font-size: 15px; /* tamanho da font */
+}
+
+.main-content-section{ /* Responsavel pelas divisorias com a linha */
+    border-bottom: 2px solid rgba(102, 102, 102, 0.219);
+    padding: 45px;
+    
+}
+
+.button-default{ /* Espaço entre as linhas */
+    line-height: 100px; /* espaço en volta do botão */
+    color: rgba(102, 102, 102, 0.616);
+    
+}
+
+.button-default{ /* Botão */
+    border: 1px solid rgba(102, 102, 102, 0.616);;
+    padding: 15px; /* espaço dentro do botão */
+    padding-left: 35px; /* espaço do nado esquerdo */
+    padding-right:35px; /* espaço do lado direito  */
+    color:rgba(102, 102, 102, 0.774); /* cor da letra  */
+    text-decoration: none; /* retira o sublinado */
+
+}
+form{
+    
+}

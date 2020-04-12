@@ -4,8 +4,10 @@
    ========================================================================== */
 
 /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
+
+* 1. Corrija a altura da linha em todos os navegadores.
+
+* 2. Evite ajustes no tamanho da fonte após alterações de orientação no iOS.
  */
 
 html {
@@ -13,20 +15,22 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* Sections
-   ========================================================================== */
 
-/**
- * Remove the margin in all browsers.
+/* Seções
+   ==================================================== ======================== * /
+
+/ **
+ * Remova a margem em todos os navegadores.
  */
 
 body {
   margin: 0;
 }
 
+
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
+ * Corrija o tamanho e a margem da fonte nos elementos `h1` na seção` seção` e
+ * contextos `article` no Chrome, Firefox e Safari.
  */
 
 h1 {
@@ -34,12 +38,13 @@ h1 {
   margin: 0.67em 0;
 }
 
-/* Grouping content
-   ========================================================================== */
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
+/* Agrupando conteúdo
+   ==================================================== ======================== * /
+
+/ **
+ * 1. Adicione o tamanho da caixa correto no Firefox.
+ * 2. Mostre o estouro no Edge e no IE.
  */
 
 hr {
@@ -48,9 +53,10 @@ hr {
   overflow: visible; /* 2 */
 }
 
+
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Corrija a herança e a escala do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o tamanho da fonte ímpar `em` em todos os navegadores.
  */
 
 pre {
@@ -58,20 +64,22 @@ pre {
   font-size: 1em; /* 2 */
 }
 
-/* Text-level semantics
-   ========================================================================== */
+
+/* Semântica no nível do texto
+   ==================================================== ======================== * /
 
 /**
- * Remove the gray background on active links in IE 10.
+ * Remova o plano de fundo cinza dos links ativos no IE 10.
  */
 
 a {
   background-color: transparent;
 }
 
+
 /**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * 1. Remova a borda inferior do Chrome 57-
+ * 2. Adicione a decoração de texto correta no Chrome, Edge, IE, Opera e Safari.
  */
 
 abbr[title] {
@@ -80,10 +88,10 @@ abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 
+/**
+ * Adicione o peso correto da fonte no Chrome, Edge e Safari.
+ */
 b,
 strong {
   font-weight: bolder;
@@ -101,19 +109,20 @@ samp {
   font-size: 1em; /* 2 */
 }
 
+
 /**
- * Add the correct font size in all browsers.
- */
+ * Adicione o tamanho da fonte correto em todos os navegadores.
+*/
 
 small {
   font-size: 80%;
 }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
 
+/**
+ * Impede que os elementos `sub` e` sup` afetem a altura da linha em
+ * todos os navegadores.
+ */
 sub,
 sup {
   font-size: 75%;
@@ -130,23 +139,25 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content
-   ========================================================================== */
 
-/**
- * Remove the border on images inside links in IE 10.
+/* Conteúdo incorporado
+   ==================================================== ======================== * /
+
+/ **
+ * Remova a borda das imagens dentro dos links no IE 10.
  */
 
 img {
   border-style: none;
 }
 
-/* Forms
-   ========================================================================== */
 
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
+/* Formulários
+   ==================================================== ======================== * /
+
+/ **
+ * 1. Altere os estilos de fonte em todos os navegadores.
+ * 2. Remova a margem no Firefox e Safari.
  */
 
 button,
@@ -160,9 +171,10 @@ textarea {
   margin: 0; /* 2 */
 }
 
+
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
+ * Mostre o estouro no IE.
+ * 1. Mostre o estouro no Edge.
  */
 
 button,
@@ -170,9 +182,10 @@ input { /* 1 */
   overflow: visible;
 }
 
+
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
+ * Remova a herança da transformação de texto no Edge, Firefox e IE.
+ * 1. Remova a herança da transformação de texto no Firefox.
  */
 
 button,
@@ -180,8 +193,9 @@ select { /* 1 */
   text-transform: none;
 }
 
+
 /**
- * Correct the inability to style clickable types in iOS and Safari.
+ * Corrija a incapacidade de estilizar tipos clicáveis ​​no iOS e Safari.
  */
 
 button,
@@ -191,8 +205,9 @@ button,
   -webkit-appearance: button;
 }
 
+
 /**
- * Remove the inner border and padding in Firefox.
+ * Remova a borda interna e o preenchimento no Firefox.
  */
 
 button::-moz-focus-inner,
@@ -203,8 +218,9 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
+
 /**
- * Restore the focus styles unset by the previous rule.
+ * Restaure os estilos de foco não definidos pela regra anterior.
  */
 
 button:-moz-focusring,
@@ -214,19 +230,21 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
+
 /**
- * Correct the padding in Firefox.
+ * Corrija o preenchimento no Firefox.
  */
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
+
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
+ * 1. Corrija a disposição do texto no Edge e no IE.
+ * 2. Corrija a herança de cores dos elementos `fieldset` no IE.
+ * 3. Remova o preenchimento para que os desenvolvedores não sejam pegos quando zerarem
+ * elementos fieldset em todos os navegadores.
  */
 
 legend {
@@ -238,25 +256,28 @@ legend {
   white-space: normal; /* 1 */
 }
 
+
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * Adicione o alinhamento vertical correto no Chrome, Firefox e Opera.
  */
 
 progress {
   vertical-align: baseline;
 }
 
+
 /**
- * Remove the default vertical scrollbar in IE 10+.
+ * Remova a barra de rolagem vertical padrão no IE 10+.
  */
 
 textarea {
   overflow: auto;
 }
 
+
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
+ * 1. Adicione o tamanho de caixa correto no IE 10.
+ * 2. Remova o preenchimento no IE 10.
  */
 
 [type="checkbox"],
@@ -265,18 +286,19 @@ textarea {
   padding: 0; /* 2 */
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
 
+/**
+ * Corrija o estilo do cursor dos botões de incremento e decremento no Chrome.
+ */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
+
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
+ * 1. Corrija a aparência estranha no Chrome e Safari.
+ * 2. Corrija o estilo do contorno no Safari.
  */
 
 [type="search"] {
@@ -284,17 +306,19 @@ textarea {
   outline-offset: -2px; /* 2 */
 }
 
+
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
+ * Remova o preenchimento interno no Chrome e Safari no macOS.
  */
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
+ * 1. Corrija a incapacidade de estilizar tipos clicáveis ​​no iOS e Safari.
+ * 2. Altere as propriedades da fonte para `herdar 'no Safari.
  */
 
 ::-webkit-file-upload-button {
@@ -302,11 +326,12 @@ textarea {
   font: inherit; /* 2 */
 }
 
-/* Interactive
-   ========================================================================== */
 
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
+/* Interativo
+   ==================================================== ======================== * /
+
+/ *
+ * Adicione a exibição correta no Edge, IE 10+ e Firefox.
  */
 
 details {
@@ -314,7 +339,7 @@ details {
 }
 
 /*
- * Add the correct display in all browsers.
+* Adicione a exibição correta em todos os navegadores.
  */
 
 summary {
@@ -325,7 +350,7 @@ summary {
    ========================================================================== */
 
 /**
- * Add the correct display in IE 10+.
+* Adicione a exibição correta no IE 10+.
  */
 
 template {
@@ -333,7 +358,7 @@ template {
 }
 
 /**
- * Add the correct display in IE 10.
+* Adicione a exibição correta no IE 10.
  */
 
 [hidden] {
