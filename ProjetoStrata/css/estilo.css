@@ -1,51 +1,132 @@
 body{
     font-family: 'Open Sans', sans-serif;
     color: #666;
-    m
+    line-height: 1.5; /* espaçamento entre as linhas */
     
 }
-.main-header{ /* parte lateral esquerda */
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 36%;
-    background-image: url(/imagens/bg.jpg);
-    padding-top: 150px;
-    border-right: 1px solid #666;
+a{ /* toda teg A */
+    transition: .2s linear, border .2s linear; /* transição mais suave nos links e do sublinhado */
+    text-decoration: none; /* Retira o sublinhado */
+    border-bottom: 1px dotted; /* pontilhado em baixo do link */
+}
+a:hover{/* todas as tags a com trasição */ 
+    border-bottom-color: transparent; /* deixa a borda tranparente */
+    color:#49bf9d;
+}p{
+    margin: 0 0 2em;
+}
+h1, h2, h3, h4, h5, h6{/* padronizando as tegs */
+    color: #787878;
+    font-weight: normal; /* deixar a fonte Normal */
+    margin: 0 0 24px 0; /* cima , direita, 24px esquerda  */
+    margin: 1em 0em; /*um em a proporção de h1 e 24px entao 1em e 48px  */
+   
+}
+
+h1{
+    font-size: 36px; /* tamanho da fonte */
+}
+h2{
+    font-size: 30px; /* tamanho da fonte */
+}
+h3{
+    font-size: 26px; /* tamanho da fonte */
+}
+h4{
+    font-size: 22px; /* tamanho da fonte */
+}
+h5{
+    font-size: 18px; /* tamanho da fonte */
+}
+h5{
+    font-size: 15px; /* tamanho da fonte */
+}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{ /*  seção que é citada de outra fonte */
+    border-left: 5px  solid #efefef;
+    margin: 2em 0;
+    padding:  .5em 0 .5em 1.5em; /* cima direita baixo esqueda */
+}
+
+code{/* Formate o texto em um documento */
+    background: #f7f7f7; /* cor de codificação */
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: 0.25em 0.65em; /* direita esquerda */
+    font-family: 'Courier New',monospace; /* fonte de codificação */
+    color: #929292;
+}
+
+pre code{/* pre(Texto pré-formatado) */
+    display: block;
+    background: #f7f7f7; /* cor de codificação */
 
 }
 
-.main-header img{ /* que fica ao lado esquerdo */
+ul, ol{
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+    
+}
+li{
+    padding-left: .5em;
+}
+.main-header{ /* parte lateral esquerda */
+    position: fixed; /* fixar a imagem */
+    top: 0; /* topo */
+    left: 0; /* esquerda */
+    height: 100%; /* altura */
+    width: 35%; /* largura */
+    background-image: url(../imagens/overlay.png), url(../imagens/bg.jpg);
+    padding: 145px 54px 72px; /*  54(direita), 72(para baixo) */
+    box-sizing: border-box;  /* Trabalha Junto Com o Padding */
+    background-position: left top; /* posicionar a imagem no esquerda e para cima */
+    background-size: auto, cover;
+    text-align: right; /* textos a esquerda */
+}
+
+.main-content{/* referente a parte direita */
+    width: 65%;
+    margin-left: 35%; 
+    padding: 145px 54px 72px; /*  54(direita), 72(para baixo) */
+    box-sizing: border-box; 
+ }
+
+ .main-header img{ /* imagem que fica ao lado esquerdo */
     border-radius: 70px; /* aredonda a imagem  */
     float: right; /* coloca a imagem na direita */
     margin-right: 35px;
     
 
 }
-.main-content{/* referente a parte direita */
-    width: 60%;
-    margin-left: 35%; 
-    padding: 145px 5px;
-    
- 
- }
- 
 
-h1{/* Referente ao texto na esquerda*/
-    font-size: 28px;
-    color:#666;
+.main-header-title strong{/* refereten ao nome Jefferson oliveira  na esquerda*/
+    color: white;
+    font-weight: normal;
+}
+
+.main-header-link{/* referten ao link do lado esquerdo */
+    color: Inherit; /* Serve para herdar a cor da fonte do .main-header-title */
+}
+.main-header-link:hover{/* hover serve para fazer efeito de acender */
+    color: #49bf9d;
+}
+
+.main-header-title {/* Referente ao texto na esquerda*/
+    font-size: 22px; /* tamanho da finto */
+    font-weight: normal; /* tipo da Fonte */
+    line-height: 1.5; /* espaçamento estre as linhas */
+    color:rgb(255, 255, 255, .5);
     text-align: right;  /* coloca na direita */
     margin: 35px;
     padding-top: 130px;
     
-}
-h2{
-    font-size: 30px;
-    color: rgba(102, 102, 102, 0.774);
-}
-p{ /* Referente a todos os subtitulos */
-    font-size: 15px; /* tamanho da font */
 }
 
 .main-content-section{ /* Responsavel pelas divisorias com a linha */
