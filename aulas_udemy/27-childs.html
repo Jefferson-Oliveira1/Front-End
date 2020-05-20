@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+    <html lang="pt-br">
+
+        <head>
+            <title> pagina de exemplo estrutura basica </title>
+            <meta charset="utf-8">
+            <meta name="author" content="Jefferson Oliveira dos santos">
+            <meta name="description" content="descrição bacanuda">
+            <meta name="keywords" content="html5, tecnologia">
+        </head>
+        <style>
+            /* nth-oftype() so funciona para elemento ele nao serve para class */
+            div p:nth-of-type(3){/* ele pega o filho de P que esta marcado nos () */
+                color:red
+            }
+
+            .destaque{
+                color: #ddd;
+            }
+
+            .destque:nth-of-type(1){ /*Nao Vai Funcionar por que ele nao serve para classe somente para paragrafo */
+                color: orangered;
+            }
+
+            .destaque:first-child{/* esta pegando o primeiro filho que tem a classe distaque */
+                color: blue;
+            }
+
+           p:last-child{
+               text-align: center;
+           }
+
+        </style>
+
+        <body>
+            
+            <div>
+                <p class="destaque">meu paragrafo</p>
+                <p>meu paragrafo</p>
+                <hr>
+                <p class="destaque">meu paragrafo</p>
+                <p>meu paragrafo</p>
+                <hr>
+                <p>meu paragrafo</p>
+                <p>meu paragrafo</p>
+                <hr>
+                <p>meu paragrafo</p>
+                <p>meu paragrafo</p>
+           
+            </div>
+
+        </body>
+
+    </html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+    <html lang="pt-br">
+
+        <head>
+            <title> pagina de exemplo estrutura basica </title>
+            <meta charset="utf-8">
+            <meta name="author" content="Jefferson Oliveira dos santos">
+            <meta name="description" content="descrição bacanuda">
+            <meta name="keywords" content="html5, tecnologia">
+        </head>
+        <style>
+            html, body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .div1{
+                width: 150px;
+                height: 50px;
+                background: red;
+                transform: translate(50%, 50%); /*se colocar apenas traslate sem os valores X,Y entre o () vc jah informa os dois automatico*/
+/*
+                position:relative;
+                left:50px;
+                top:e50px;
+*/
+            }
+            .div2{
+                width: 150px;
+                height: 50px;
+                background: rgb(79, 17, 250);
+                position: relative;
+                left:50%;
+            }
+            .div3{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div3-interna{
+                background:yellow;
+                transform: translate(80%, 25px);
+            }
+
+            .div4{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div4-interna{
+                background:yellow;
+                transform: rotate(-25deg);/* rotate recebe valores em graus repesentada por deg */
+            }
+
+            .div5{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div5-interna{
+                background:rgb(255, 0, 0);
+                transform: rotate(-5deg);/* rotate recebe valores em graus repesentada por deg */
+                transform-origin: bottom right; /* muda o eixo de rotação */
+            }
+
+            .div6{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div6-interna{
+                background:rgb(0, 255, 0);
+                transform: rotate(30deg) translate(50px);/* colocar o traslate junt com o rotate */
+            }
+
+            .div7{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div7-interna{
+                background:rgb(0, 60, 255);
+                transform: translate(50px) rotate(30deg);/* colocar o traslate junt com o rotate */
+            }
+
+            .div8{
+                width: 100px;
+                height: 100px;
+                background: rgb(255, 0, 200);
+                transform:skew(-50deg, 50deg);/* distorce o elemento */
+            }
+
+            .div9{
+                width: 100px;
+                height: 100px;
+                background: rgb(255, 115, 0);
+                transform:scale(.5) translateX(50%);/* serve para aumentar a escala do eelemento */
+                transition: transform .5s;
+            }
+
+            .div9:hover{
+                transform: scale(2);
+            }
+
+
+        </style>
+
+        <body>
+            <div class="div1">div1 - eixo X 50px/eixo Y 50px</div>
+            <div class="div2">div2 - position relative</div>
+            <hr>
+           
+            <div class="div3">
+                <div class="div3-interna">transform: translatex(50px)</div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="div4">
+                <div class="div4-interna">transform: rotate(45deg);</div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="div5">
+                <div class="div5-interna">transform: rotate(45deg);</div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="div6">
+                <div class="div6-interna">transform: rotate(45deg);</div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="div7">
+                <div class="div7-interna">transform: rotate(45deg);</div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book.
+                </p>
+            </div>
+
+            <hr>
+            <div>
+            <div class="div8">div 8</div>
+            <div  class="div9">div 9</div>
+        </body>
+
+    </html>

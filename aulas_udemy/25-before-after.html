@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Jefferson Oliveira dos santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 25px;
+            position: relative;
+        }
+        div::before{/* quando vc utiliza before por obrigação vc tbm coloca content*/
+            content: "before:";/* e enserido antes do conteuso Principal */
+            background: #ccc;
+        }
+        div:after{/* quando vc utiliza after por obrigação vc tbm coloca content*/
+            content: ":after";/* e enserido depois do conteuso Principal */
+            background: #ccc;
+        }
+
+        div:after{/*ele se comporta como elemneto de linha */
+            content: "";/* tambem da para fazer uma "caixinha" */
+            background:blue;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+
+    <body>
+
+        <div> Texto Principal da div</div>
+
+        <article > 
+            <p> antes do titulo </p>
+            
+            <h3>
+                Titulo
+            </h3>
+
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+        </article>
+
+        <ul>
+            <li> <a href="#">link falso </a></li>
+            <li> <a href="#">link falso </a></li>
+            <li><a href="http://serfrontand.com"target="_blank">link externo</a></li>
+            <li><a href="http://serfrontand.com/qq.pdf"target="_blank">link externo</a></li>
+            <li><a href="/aulas_udemy/23_trasnsition.html" title="veja exercicio antrioor">link interno</a></li>
+        </ul>
+    </body>
+
+</html>

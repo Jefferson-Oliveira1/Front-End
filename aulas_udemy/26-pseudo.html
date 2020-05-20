@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+    <html lang="pt-br">
+
+        <head>
+            <title> pagina de exemplo estrutura basica </title>
+            <meta charset="utf-8">
+            <meta name="author" content="Jefferson Oliveira dos santos">
+            <meta name="description" content="descrição bacanuda">
+            <meta name="keywords" content="html5, tecnologia">
+        </head>
+        <style>
+            input[type="checkbox"]{
+                width:100px;
+                height: 100px;
+            }
+            input[type="checkbox"]:checked{/* Representa todos os elementos na página que estão ativos */
+                width:50px;
+                height: 50px;
+            }
+
+            button:disabled{/*  representa qualquer elemento desativado. Um elemento é desativado se não puder ser ativado (selecionado, clicado, digitado etc.) */
+                background: red;
+            }
+
+            p{
+                color: blue;
+            }
+            p:empty:before{ /* representa qualquer elemento que não tenha filhos. Aqui, filhos podem ser outros elementos ou blocos de texto (incluindo espaços em branco) */
+                content: "Paragrafo vazio nao dá, ne!";
+            }
+
+            input[type="text"]:focus{/* é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse (ex: um campo de um formulário).*/
+                background: #ccc;
+            }
+
+            input[type="text"]:read-only{/* é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse (ex: um campo de um formulário).*/
+                background: yellow;
+            }
+
+            a:focus, a:hover, div:focus{ /* vai pintar de vermelho o fndo o focus com o tab e hover com o cursor ao passar por cima */
+                background: red;
+            }
+
+            input::placeholder{ /* coloca cor na placehoder */
+                color: red;
+            }
+
+
+        </style>
+
+        <body>
+
+            <label><input type="checkbox" value="sim"> Aceito o Contrato</label>
+            
+            <hr>
+
+            <button>Vai</button>
+            <button disabled>Volta</button>
+            
+            <hr>
+
+            <p> Paragrafo 1</p>
+            <p> </p>
+            <p></p>
+            
+            <hr>
+
+            <input type="text">
+            <input type="text" value="valor inicial"><!-- o valor value Deixa o campo preenchido parecendo que foi digitado-->
+            <input type="text" value="valor inicial - readonly" readonly>
+            <input type="text" value="valor inicial - disabled" disabled>
+            <input type="text" placeholder="valor do placeholder"><!--o valor placehoder Deixa o valor Prenchindo porwm quando vc clica ele apaga -->
+
+            <ul>
+                <li><a href="#">link falso</a></li>
+                <li><a href="#">link falso</a></li>
+                <li><a href="#">link falso</a></li>
+                <li><a href="#">link falso</a></li>
+            </ul>
+
+            <div tabindex="1">div 01</div><!--tabindex força a div receber focus -->
+            <div tabindex="2">div 02</div>
+            <div tabindex="3">div 03</div>
+            <div tabindex="4">div 04</div>
+
+        </body>
+
+    </html>

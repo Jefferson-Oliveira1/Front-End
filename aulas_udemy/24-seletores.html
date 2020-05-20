@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Jefferson Oliveira dos santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <style>
+
+        article:nth-child(1) a{ 
+            color: red;      
+        }
+
+        article:nth-child(3) > p{ /* seleciona todo o paragrafo que e filho direto de p */
+            color: red;      
+        }
+
+        article:nth-child(5) h3 + p{ /* seleciona todo o paragrafo que imediatamente apos h3*/
+            color: red;
+            margin-top: 50px;      
+        }
+
+        article:nth-child(7) h3 ~ p{ /* seleciona todo o paragrafo que imediatamente apos h3 e antes nao seleciona*/
+            color: orange;
+            margin-top: 50px;      
+        }
+
+        article:not(.destaque){/* todos os articles tem a cor orange exeto oque tem a class destaque */
+            color: orange;
+        }
+
+        .destaque{
+            background: yellow;
+        }
+
+        a[href="#"]{ /* e ussado para evitar que usse um link falso */
+            opacity: .2;
+        }
+
+        a[href^="http"]{ /* pegar todo link externo (^= inicia com )*/
+            color: red;
+        }
+
+        a[title]{ /*Formata o Elemento a somente */ 
+            color: green;
+        }
+
+        a[href$=".pdf"]{ /* todo link que termina com .pdf terina com esta formatação */
+            text-decoration:none;
+        }
+
+
+    </style>
+
+    <body>
+        <article> <!-- inicio do Primeiro Filho -->
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+        </article> <!-- fim Primeiro Filho -->
+
+        <hr>    <!--segundo filho-->
+
+        <article> <!--inicio do terceiro Filho -->
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+        </article><!--fim do terceiro Filho -->
+
+        <hr>    <!--querto filho-->
+
+        <article> <!--incio do quinto filho -->
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+        </article><!--fim do quinto filho -->
+
+        <hr>    <!--sexto filho-->
+
+        <article> <!--incio do setimo filho -->
+            <p> antes do titulo </p>
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+        </article><!--fim do setimo filho -->
+
+        <hr>    <!--oitavo filho-->
+
+        <article class="destaque"> <!--incio do nono filho -->
+            <p> antes do titulo </p>
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+            <p>paragrador <a href="#">apenas um link com <b>negrito </b></a></p>
+        </article><!--fim do nono filho -->
+
+        <ul>
+            <li> <a href="#">link falso </a></li>
+            <li> <a href="#">link falso </a></li>
+            <li><a href="http://serfrontand.com"target="_blank">link externo</a></li>
+            <li><a href="http://serfrontand.com/qq.pdf"target="_blank">link externo</a></li>
+            <li><a href="/aulas_udemy/23_trasnsition.html" title="veja exercicio antrioor">link interno</a></li>
+        </ul>
+    </body>
+
+</html>
