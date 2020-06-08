@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Desafio Checkbox lindao</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Jefferson"> 
+        <meta name="descripition" content="uma pagina de desafio">
+        <meta name="keywords" content="desafio">
+    </head>
+    <style>
+         label{
+            margin-right: 25px;
+        }
+        .checkbox-span{
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            background:#ccc; 
+            border-radius: 15px;
+        }
+        .checkbox-span:after{
+            content: " ";
+            width: 20px;
+            height: 20px;
+            background: #eee;
+            border-radius: 25px;
+            display: block;
+            margin: 5px;
+            transition: all .2s ease-in-out; /* trabalha em conjunto para movimentar a bolinha mais suavemente */
+        }
+
+        .checkbox-label input:checked + .checkbox-span:after{ /* faz a movimentação da bolinha */
+            transform: translate(30px);
+            background: black;
+        }
+        .checkbox-label input{ /* esconde a caixinha de marcação */
+            opacity: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+
+        .checkbox-label input:focus + .checkbox-span{/* indica ao usuario qual esta selecionado */
+            box-shadow: 0 0 0 1px;
+
+        }
+
+    </style>
+    <body>
+        <h1>desafio Checkbox lindao </h1>
+       
+        <label class="checkbox-label">
+            <input type="checkbox">
+            <span class="checkbox-span"></span>
+            esporte
+        </label >
+
+        <label class="checkbox-label">
+            <input type="checkbox">
+            <span class="checkbox-span"></span>
+            politica
+        </label>
+
+        <label class="checkbox-label" >
+            <input type="checkbox" >
+            <span class="checkbox-span"></span>
+            educação
+        </label >
+    </body>
+</html>

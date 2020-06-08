@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>wallpaper</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Jefferson">
+        <meta name="description" content="#">
+        <meta name="keyword" content="#">
+        <link href="#" rel="stylesheet">
+   
+    </head>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin-left: 4%;
+            margin-right: 4%;
+            background-color: black;
+        }
+        h1{
+            color: white;
+            font-size: 45px;
+            text-align: center ;
+            border: solid white 2px;
+            padding: 10px;
+        }
+        h1:hover{
+            background: rgba(204, 204, 204, 0.322);
+            transition: all.5s;
+        }
+
+        h1:hover::before{
+            content:"";
+            background: rgba(204, 204, 204, 0.322);
+            transition: all.5s;
+        }
+
+        a{
+            display: block;
+            margin-bottom: 4%;
+            position: relative;
+        }
+
+        a img{
+            height: 250px;
+            display: block;
+            border-radius: 20px 20px 20px 20px; /* aredondar as pontas da imagen*/
+            border: solid 2px rgba(247, 244, 244, 0.26);
+            margin: 5px;
+
+            
+
+        }
+
+        a::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all.5s;
+        }
+
+        a:hover:before{
+            background: rgb(0,0,0,.5);
+
+        }
+        a::after{
+            opacity: 0;
+
+        }
+
+        a img:after{
+            content: "";
+            color: white;
+            display: block;
+            position: absolute;
+            border: 2px solid white;
+            opacity: 1;
+            padding: 10px 20px;
+        }
+        .lado-esquedo{
+            display: block;
+            float: right;
+        }
+        .lado-centro{
+            display: block;
+            float: left;
+
+            margin-left: 1%;
+        }
+
+        .lado-direito{
+            display: block;
+            float: left;
+
+ 
+        }
+
+    </style>
+    
+    <body>
+       <h1> wallpaper </h1>
+        
+       <section class="lado-esquedo">
+            <div class="lado-esquedo-foto">
+
+                <a href="/Cantinho de treino/fotos/002.jpg" alt="#">
+                    <img class="img-big" src="/Cantinho de treino/fotos/002.jpg" alt="#"></a>
+
+                <a href="/Cantinho de treino/fotos/005.jpg" alt="#">
+                    <img class="img-big" src="/Cantinho de treino/fotos/005.jpg" alt="#"></a>
+
+                <a href="/Cantinho de treino/fotos/002.jpg" alt="#">
+                    <img class="img-big" src="/Cantinho de treino/fotos/002.jpg" alt="#"></a>
+
+                <a href="/Cantinho de treino/fotos/006.jpg" alt="#">
+                    <img class="img-big" src="/Cantinho de treino/fotos/006.jpg" alt="#"></a>
+
+                <a href="/Cantinho de treino/fotos/006.jpg" alt="#">
+                    <img class="img-big" src="/Cantinho de treino/fotos/006.jpg" alt="#"></a>
+        </section>
+        <section class="lado-direito">
+            <div class="lado-direito-foto"></div>
+
+
+            <a href="/Cantinho de treino/fotos/003.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/003.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/004.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/004.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/006.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/006.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/002.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/002.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/003.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/003.jpg" alt="#"></a>
+            </div>
+        </section>
+
+        <section class="lado-centro">
+            <div class="lado-centro-foto"></div>
+
+            <a href="/Cantinho de treino/fotos/007.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/005.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/006.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/006.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/005.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/004.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/003.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/003.jpg" alt="#"></a>
+
+            <a href="/Cantinho de treino/fotos/002.jpg" alt="#">
+                <img class="img-big" src="/Cantinho de treino/fotos/002.jpg" alt="#"></a>
+            </div>
+        </section>
+
+    </body>
+
+</html>
